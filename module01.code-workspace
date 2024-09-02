@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "module01"
+		},
+		{
+			"path": "node_modules"
+		}
+	],
+	"settings": {}
+}
