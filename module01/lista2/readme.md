@@ -1,0 +1,7 @@
+- baixar o VSCode https://code.visualstudio.com para um melhor acesso aos códigos
+- baixar o Node.js https://nodejs.org/pt para rodar os códigos e aparecer no terminal 
+- verificar se o node está baixado, executando node -v no terminal do VSCode
+- acessar o diretório em que o arquivo que será rodado está com o comando cd <nomePasta>
+- executar o código com o comando node <nomeArquivo> (mantendo o .js no final)
+- se você quiser rodar o código de um jeito mais rapidamente, baixar a extensão Code Runner (nas extensões do VSCode) e habilitar Code-runner: Run In Terminal nas configurações da extensão (checkbox: Whether to run code in Integrated Terminal). Dessa maneira, aparecerá no canto superior esquerdo um ícone de rodar e você conseguirá executar o código mais rapidamente. 
+- acessar cada arquivdo da lista2 e clicar no ícone de rodar, automaticamente o terminal aparecerá na tela com a respectivda resolução. 

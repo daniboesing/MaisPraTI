@@ -1,0 +1,19 @@
+/* Adicione uma borda ao redor do formulário com cantos arredondados. CHECK
+Utilize espaçamento adequado entre os campos. CHECK 
+Altere a cor de fundo e o estilo da fonte. CHECK
+Aplique foco (:focus) nos campos, destacando-os quando o usuário estiver interagindo com eles.
+Estilize o botão de envio para parecer um botão moderno (com sombras, efeito hover, e animação suave quando pressionado). */
+
+form {
+    background-color: darkcyan;
+    font-style: italic;
+    padding: 10px;
+}
+label {
+    border-radius: 4px;
+
+}
+
+imput:focus {
+    border-color: yellow;
+}

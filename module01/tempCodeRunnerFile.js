@@ -1,18 +1,27 @@
 
-const prompt = require('prompt-sync')()
-let option = Number(prompt('escolha o primeiro ou o segundo ou o terceiro caso: '))
+let serie = {
+    nome: "The Boys",
+    genero: ["Ação", "Paródia", "Heróis"],
+    nrTemporadas: 4,
+    status: "Em andamento",
+    classificao: 18,
+    nrEpisodios: {
+        temp1: 10,
+        temp2: 10,
+        temp3: 50
+    },
+    mostrarCaracteristicas: function() {
+        return `O nome da série é: ${this.nome} e sua classificação é +${this.classificao}`;
+    }
+};
 
-switch(option) {
-    case 1: 
-        console.log('você selecionou primeira opcao')
-        break
-    case 2: 
-        console.log('você selecionou segunda opcao')
-        break
-    case 3: 
-        console.log('você selecionou a terceira opção')
-        break
-    default:
-        console.log('não escolheu nenhuma opcao')
-        break 
+// console.log(serie.mostrarCaracteristicas())
+
+// iterando
+
+for(let key in serie){
+    console.log(`${key}: ${serie[key]}`)
+    for (let key2 in serie.nrEpisodios) {
+        console.log(`  ${key2}: ${serie.nrEpisodios[key2]}`)
+    }    
 }

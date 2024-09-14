@@ -1,0 +1,189 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+    <head>
+        <title>Página Principal</title>
+
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Web Development, HTML, CSS, Javascript">
+        <meta name="author" content="Daniela">
+        <meta name="description" content="Este site trata de conteúdos introdutórios do HTML">
+
+        <style>
+            h1{
+                color: rgb(140, 214, 140);
+                font-size: 45px;
+            }
+            a{
+                text-decoration: none;
+                font-weight: bold;
+                color: brown;
+                background-color: grey;
+                border: 1px dashed;
+            }
+
+            a:hover {
+                color: grey;
+            }
+
+            a:link {
+                color:blanchedalmond;
+            }
+
+            a:visited {
+                color:black; 
+            }
+
+            a:active {
+                color:blueviolet
+            }
+
+            p {
+                background-color: azure;
+                color: grey;
+                text-align: justify;
+                letter-spacing: normal;
+            }
+
+            ul {
+                list-style-type: disc;
+                border: 3px solid #000;
+                margin-bottom: 30px;
+                padding-top: 10px;
+            }
+
+            li {
+                margin-bottom: 5px;
+            }
+
+            ol {
+                list-style-type: circle;
+                padding-top: 10px;
+            }
+
+            table {
+                border: 2px solid;
+                text-align: center;
+            }
+
+            th, td{
+                border: 1px solid rgb(180, 99, 150);
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <nav>
+            <a href="https:/www.google.com">Página Principal</a>
+        </nav>
+
+        <hr>
+
+        <header>
+            <h1>Bem-vindo ao nosso site</h1>
+            <h2 style="color:aquamarine">Bem-vindo ao nosso site</h1>
+            <h3>Bem-vindo ao nosso site</h1>
+        </header>
+
+        <hr>
+
+        <section>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellendus dicta quas. Ab, dolor totam vitae itaque aut veritatis quo nulla, assumenda odit qui iusto quam? Iure placeat voluptas eos.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellendus dicta quas. Ab, dolor totam vitae itaque aut veritatis quo nulla, assumenda odit qui iusto quam? Iure placeat voluptas eos.
+            </p>
+
+            <p>
+                Fórmula química: H<sub>2</sub>0
+                Expoente: 5<sup>2</sup> 
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <p>Uma <abbr title="Application Programming Interface">API</abbr> permite que diferentes software se comuniquem</p>
+            
+            <blockquote cite="https://www.google.com">
+                O google é um navegador de destop com excelente performace
+            </blockquote>
+
+            <p><cite>The Starry Night</cite> por Vicente Van Gogh. Pintada em 1889 </p>
+        
+            <p>A famosa citação da peça Hamblet de Shakespare - <q>Ser ou não ser</q></p>
+        
+            <p> Este texto tem <strong>ênfase</strong> nisso</p>
+
+            <p> Este texto tem <em>ênfase</em> nisso</p>
+
+            <p> Este texto tem <u>ênfase</u> nisso</p>
+
+            <p> Este texto tem uma palavra <s>incorreta</s></p>      
+        </section>
+
+        <hr> 
+
+        <section>
+            <h3>Navegação do site</h3>
+
+            <ul>
+                <li>Página Principal</li>
+                <li>SObre nós</li>
+                <li>Curiosidades</li>
+            </ul>
+
+            <h2>FAQ</h2>
+
+            <ol>
+                <li>O que é HTML?</li>
+                <li>Como o CSS funciona?</li>
+                <li>Para que serve o JS?</li>
+            </ol>
+        </section>
+
+        <hr> 
+
+        <section>
+            <table border="1" width="100%">
+                <tr>
+                    <th>Produto</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                </tr>
+                <tr>
+                    <td>Notebook</td>
+                    <td>Notebook gamer</td>
+                    <td>R$1000</td>
+                </tr>
+            </table>
+        </section>
+
+        <hr> 
+
+        <section>
+            <h2>Login</h2>
+            <form>
+                <label for="nomeUsuário">Nome de Usuário: </label>
+                <input type="text">
+
+                <br><br>
+
+                <label for="senha">Senha: </label>
+                <input type="password">
+            </form>
+        </section>
+
+        <hr> 
+
+        <footer>
+            <h2>Rodapé da página</h2>
+
+            &lt;Aprendendo HTML&gt;
+            <p>Desenvolvido por Daniela &copy;</p>
+        </footer>
+    </body>
+</html>

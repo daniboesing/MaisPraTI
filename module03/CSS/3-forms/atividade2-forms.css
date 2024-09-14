@@ -1,0 +1,15 @@
+button:hover {
+    background-color: brown;
+    padding: 30px;
+    margin: 15px;
+}
+
+form{
+    width: 400px;
+    text-align: center;
+}
+
+input{
+    border: 1px solid;
+    padding: 2px;
+}

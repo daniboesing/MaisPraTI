@@ -1,0 +1,54 @@
+div p {
+    color: black;
+}
+
+ul > li {
+    list-style: none;
+}
+
+h1 + p {
+    margin-bottom: 10px;
+}
+
+h1 ~ p {
+    color: purple;
+}
+
+a:hover {
+    /*quando coloco o mousse em cima*/
+}
+
+a:visited {
+    /*quando visito um site*/
+}
+
+p::after {
+     /*insiro conteúdo depois de todos os p*/
+     content: 'Seu nome';
+}
+
+p::first-letter {
+
+}
+
+P::first-line {
+
+}
+
+li:nth-child(2) {
+    color: orange;
+     /*segundo filho de li vai ter a cor laranja*/
+}
+
+tr:nth-child(even){
+
+}
+
+button:not(.primary){
+    color: chartreuse;
+     /*todos vao receber esse comando menos o botao primary*/
+}
+
+button:active {
+    
+}

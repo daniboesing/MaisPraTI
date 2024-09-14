@@ -1,0 +1,55 @@
+ /*como o navegador vai aplicar na página
+ alguns elementos vao passar certas características 
+ propriedades nao heradadas border, padding, background-color, margin */
+
+ body {
+    color: black;
+ }
+
+ div {
+    color: red;
+ }
+
+ p {
+    color: inherit;
+     /*forço a herança*/
+ }
+
+ /*especificidades*/
+
+  /* especificidade de uma classe é maior que de um parágrafo
+  qual ganha? 
+  id maior especificidade 
+  seletor de class, input
+  h1, div, p, a */
+
+p {
+    color: #000;
+}
+.paragrafo {
+    color: green;
+}
+
+#texto 
+
+/*em caso de mesmo comando, o último será levado em consideracao
+roxo prevalecerá */
+
+p {
+    color: blue;
+}
+
+p {
+    color: rgb(145, 145, 246);
+}
+
+/*caso exista o important ele será levado em consideração
+azul prevalecerá*/
+
+p {
+    color: blue !important;
+}
+
+p {
+    color: rgb(145, 145, 246);
+}
