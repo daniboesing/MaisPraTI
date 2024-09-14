@@ -34,3 +34,4 @@ pedidos.forEach(pedido => {
 })
 
 console.log(agrupador)
+
