@@ -1,27 +1,20 @@
 
-let serie = {
-    nome: "The Boys",
-    genero: ["Ação", "Paródia", "Heróis"],
-    nrTemporadas: 4,
-    status: "Em andamento",
-    classificao: 18,
-    nrEpisodios: {
-        temp1: 10,
-        temp2: 10,
-        temp3: 50
-    },
-    mostrarCaracteristicas: function() {
-        return `O nome da série é: ${this.nome} e sua classificação é +${this.classificao}`;
+let count = 0
+let num = 101
+
+do{
+    let primo = 0
+    for(let i = 1; 1 <= num; i++){
+        if(num % 1 === 0){
+            primo++
+        }
+    } 
+    // percorrer por todos os números e ver quantas vezes ele é divisível
+
+    if(primo === 2){ // divisível por 1 e ele mesmo
+        console.log(num)
+        count++ // determinar o final do meu loop 
     }
-};
 
-// console.log(serie.mostrarCaracteristicas())
-
-// iterando
-
-for(let key in serie){
-    console.log(`${key}: ${serie[key]}`)
-    for (let key2 in serie.nrEpisodios) {
-        console.log(`  ${key2}: ${serie.nrEpisodios[key2]}`)
-    }    
-}
+    num++ // aumenta o numero e roda de novo
+} while (count < 50) 

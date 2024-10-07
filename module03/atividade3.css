@@ -1,0 +1,19 @@
+.header {
+    background-color: beige;
+    justify-content: center;
+}
+
+.section {
+    background-color: black;
+    color: white;
+
+}
+
+.aside {
+    background-color: beige;
+
+}
+
+.footer {
+    background-color:cornsilk;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM - Browser Object Model </title>
+    <script>
+        let myWindow
+
+        function openWin(){
+            myWindow = window.open("", "myWindow", "width=200", "heigth=100")
+            myWindow.document.write("<p>Nova janela aberta!</p>")
+        }
+
+        function closeWin() {
+            if(myWindow){
+                myWindow.close()
+            }
+        }
+
+        let heigth = window.screen.availHeight
+        let width = window.screen.availWidth
+
+        document.write('A altura do navegador é' + heigth + 'px<br>')
+        document.write('A largura do navegador é' + width + 'px<br>')
+
+        window.setTimeout(() => { // daqui a 3 segundos acontecerá isso
+            document.write('Olá mundo!<br>')
+        }, 3000)
+
+        let i = 10
+        let j = window.setInterval(() => {
+            document.write(i + "<br>")
+            i--
+            if(i === 0){
+                clearInterval(j) // nosso break, sem ele nao iria parar
+                document.write('contagem finalizada!<br>')
+            }
+        }, 2000)
+
+        function redirectTo(url) { // sem ela o botao nao funciona
+            window.location.href = url
+        }
+    </script>
+</head>
+<body>
+    <h1>Elementos do computador</h1>
+
+    <button onclick="openWin()">Abrir janela</button>
+    <button onclick="closeWin()">Fechar janela</button>
+    <button onclick="window.print()">Imprimir janela</button>
+
+    <button onclick="redirectTo('http://www.google.com')">Acessar google</button>
+    
+</body>
+</html>

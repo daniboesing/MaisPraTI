@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de tarefas</title>
+    <link rel="stylesheet" href="tarefas.css">
+    <style>
+        .remove-btn {
+            cursor: pointer;
+            color: red
+        }
+
+        .editing {
+            border: 5px solid blue;
+        }
+    </style>
+</head>
+<body>
+
+        <h1>Gerenciador de tarefas</h1>
+
+        <label for="task-input"></label>
+        <input type="text" id="task-input" placeholder="Digite uma nova tarefa"> 
+        <button id="add-task-btn">Adicionar tarefa</button>
+
+        <br>
+
+        <ul id="task-list"></ul>
+
+        <br>
+
+    <div>
+        <button class="filter-btn" id="botaoTodas">Todas</button>
+        <button class="filter-btn" id="botaoConcluidas">Concluidas</button>
+        <button class="filter-btn" id="botaoNaoConcluidas">Não Concluidas</button>
+    </div>
+
+    <script src="tarefas.js"></script>
+</body>
+</html>

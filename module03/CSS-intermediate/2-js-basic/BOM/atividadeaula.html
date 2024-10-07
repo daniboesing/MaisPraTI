@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Aula</title>
+
+    <script>
+        let window 
+
+        window.setTimeout(() => {
+            document.write('2 segundos')
+        }, 2000) 
+
+        let i = 0
+        let j = window.setInterval(() => {
+            document.write(i + '<br>')
+            i++
+            if(i === 20){
+                clearInterval(j)
+            }
+        }, 1000)
+
+    </script>
+</head>
+<body>
+    <button onclick="texto()">Texto da página</button>
+    <button onclick="contador()">Contador</button>
+    <button onclick="voltar()">Voltar</button>
+    <button onclick="avancar()">Avançar</button>
+    
+</body>
+</html>

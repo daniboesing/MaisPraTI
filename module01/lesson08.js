@@ -120,8 +120,8 @@ let num = 101
 
 do{
     let primo = 0
-    for(let i = 1; 1 <= num; 1++){
-        if(num % 1 === o){
+    for(let i = 1; 1 <= num; i++){
+        if(num % 1 === 0){
             primo++
         }
     } 
